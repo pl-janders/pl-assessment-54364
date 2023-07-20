@@ -3,21 +3,21 @@ import { Fixture } from '../../types'
 import { GameContainer, TeamLeft, TeamRight, Logo } from './Game.styles';
 
 interface GameProps {
-  feature: Fixture
+  fixture: Fixture
 }
 
 const Game = (props: GameProps) => {
-  const { feature } = props;
+  const { fixture } = props;
 
   return (
     <GameContainer>
       <TeamLeft>
-        {feature.home.label}
-        <Logo src={feature.home.logo} alt='logo' />
+        {fixture.home.label}
+        <Logo src={fixture.home.logo} alt='logo' />
       </TeamLeft> v 
       <TeamRight>
-        <Logo src={feature.away.logo} alt='logo' />
-        {feature.away.label}
+        <Logo src={fixture.away.logo} alt='logo' />
+        {fixture.away.label}
       </TeamRight>
     </GameContainer>
   );

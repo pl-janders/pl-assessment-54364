@@ -1,4 +1,19 @@
+@font-face {
+  font-family: 'PremierLeague';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/PremierLeague-Regular.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'PremierLeagueBold';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/PremierLeague-Bold.otf') format('otf'),
+}
+
 #root {
+  font-family: 'PremierLeague';
   margin: 0 auto;
   background-color: #fff;
   color: #000;
