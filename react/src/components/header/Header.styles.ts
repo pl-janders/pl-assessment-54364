@@ -5,9 +5,11 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: {props => props.theme.color.purple};
 `;
 
-export const HeaderText = styled.h1`
-  color: #3B175C;
-`;
+export const HeaderText = styled.h1(
+  ({ theme }) => `
+  font-family: 'PremierLeagueBold';
+  padding-left: 10px;
+  color: ${theme.colors.purple};
+`);

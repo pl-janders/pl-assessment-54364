@@ -1,27 +1,24 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Fixture } from '../../types'
-// import axios from 'axios'
-
+//import axios from 'axios'
 
 import Header from '../../components/header'
 import Aside from '../../components/aside'
 import Main from '../../components/main'
+
 import { fixtures } from '../../data';
 import { GridContainer, Grid } from './Home.styles'
 
-
 function Home() {
-
   const fixtureData: Fixture[] = fixtures;
+//   const fetchFixtures = async () => {
+//     const response = await axios.get("http://localhost:3000/");
+//     if (response && response.data) console.log(response);
+//   }
 
-  // const fetchFixtures = async () => {
-  //   const response = await axios.get("http://localhost:3000/");
-  //   if (response && response.data) console.log(response);
-  // }
-
-  // useEffect(() => {
-  //   void fetchFixtures()
-  // }, []);
+//   useEffect(() => {
+//     void fetchFixtures()
+//   }, []);
 
   const [activeGame, setActiveGame] = useState<Fixture>(fixtureData[0])
   
